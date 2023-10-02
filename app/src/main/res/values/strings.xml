@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="shop_by_category">Shop By Category</string>
+    <string name="see_all">See All</string>
+    <string name="shop_by_Product" />
+</resources>

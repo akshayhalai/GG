@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1061855476717",
+    "project_id": "ggtech-fc7af",
+    "storage_bucket": "ggtech-fc7af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061855476717:android:a6303b6d6156dbd7e6c5e4",
+        "android_client_info": {
+          "package_name": "com.example.gg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Z5svpwQoUAiNEtZNWR0CKoxDToXAt7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
