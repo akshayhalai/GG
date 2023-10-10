@@ -13,9 +13,6 @@ import com.example.gg.model.AddProductModel
 class CategoryProductAdapter(val context: Context, val list:ArrayList<AddProductModel>):RecyclerView.Adapter<CategoryProductAdapter.CategoryProductViewHolder>() {
     inner class CategoryProductViewHolder(val binding : Item1CategoryProductLayoutBinding)
         : RecyclerView.ViewHolder(binding.root)
-    {
-
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryProductViewHolder {
         val binding = Item1CategoryProductLayoutBinding.inflate(LayoutInflater.from(context),parent,false)
@@ -30,7 +27,7 @@ class CategoryProductAdapter(val context: Context, val list:ArrayList<AddProduct
         Glide.with(context).load(list[position].productCoverImg).into(holder.binding.imageView4)
 
         holder.binding.textView5.text = list[position].productName
-        holder.binding.textView5.text = list[position].productSp
+        holder.binding.textView6.text = list[position].productSp
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context, ProductDetailsActivity::class.java)

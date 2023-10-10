@@ -4,10 +4,13 @@ import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.gg.activity.CheckoutActivity
 import com.example.gg.activity.ProductDetailsActivity
 import com.example.gg.databinding.LayoutProductItemBinding
+import com.example.gg.fragment.CartFragment
 import com.example.gg.model.AddProductModel
 
 class ProductAdapter(val context:Context, val list:ArrayList<AddProductModel>):RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
@@ -32,6 +35,13 @@ class ProductAdapter(val context:Context, val list:ArrayList<AddProductModel>):R
         holder.binding.textView2.text = data.productMrp
 
         holder.binding.button.text = data.productSp
+
+        holder.binding.button2.setOnClickListener{
+            val intent = Intent(context, ProductDetailsActivity::class.java)
+            intent.putExtra("id",list[position].productID)
+            context.startActivity(intent)
+
+        }
         holder.itemView.setOnClickListener{
             val intent = Intent(context, ProductDetailsActivity::class.java)
             intent.putExtra("id",list[position].productID)

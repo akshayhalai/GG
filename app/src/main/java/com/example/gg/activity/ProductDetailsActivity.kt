@@ -25,6 +25,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProductDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         getProductDetails(intent.getStringExtra("id"))
     }
 
@@ -79,6 +80,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun addToCart(
         productDao: ProductDao,
         proID: String,
@@ -102,7 +104,11 @@ class ProductDetailsActivity : AppCompatActivity() {
         editor.putBoolean("isCart",true)
         editor.apply()
 
+
         startActivity(Intent(this,MainActivity::class.java))
         finish()
+
     }
+
+
 }

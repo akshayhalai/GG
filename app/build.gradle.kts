@@ -37,18 +37,16 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures{
-        viewBinding = true;
+        viewBinding = true
     }
-
-
 
 }
 
 dependencies {
 
     implementation("com.android.support:support-annotations:28.0.0")
-    implementation("androidx.annotation:annotation:1.6.0")
-    val nav_version = "2.7.2"
+    implementation("androidx.annotation:annotation:1.7.0")
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
@@ -61,14 +59,15 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
     implementation("com.google.firebase:firebase-storage-ktx:20.2.1")
-    implementation("com.google.firebase:firebase-firestore-ktx:24.7.1")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.8.1")
+    implementation("com.google.firebase:firebase-firestore:24.8.1")
 
 
     implementation ("com.github.bumptech.glide:glide:4.13.0")
-//    annotationProcessor ("com.github.bumptech.glide:compiler:4.13.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.13.0")
 
-    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
-    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
     implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
 
     implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
@@ -78,9 +77,14 @@ dependencies {
     val room_version = "2.5.2"
 
     implementation("androidx.room:room-runtime:2.5.2")
+    //noinspection KaptUsageInsteadOfKsp
     kapt("androidx.room:room-compiler:2.5.2")
     implementation("androidx.room:room-ktx:2.5.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android")
+
+    implementation ("com.razorpay:checkout:1.6.19")
+
+    implementation ("com.airbnb.android:lottie:3.4.0")
 
 //    implementation ("androidx.room:room-runtime:2.4.3")
 //    implementation ("androidx.room:room-ktx:2.4.3")

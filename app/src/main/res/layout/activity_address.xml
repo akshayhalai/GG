@@ -7,27 +7,17 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context=".fragment.MoreFragment">
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="18dp"
-        android:layout_height="wrap_content"
-        android:text="Profile" />
+    tools:context=".activity.AddressActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
+        android:enabled="false"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userName"
             android:layout_width="match_parent"
-            android:enabled="false"
             android:layout_height="wrap_content"
             android:hint="User Name" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -35,13 +25,12 @@
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginTop="10dp"
+        android:enabled="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userNumber"
-            android:enabled="false"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Number" />
@@ -55,7 +44,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userVillage"
-            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Village" />
@@ -69,7 +57,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userCity"
-            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="City" />
@@ -83,7 +70,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userState"
-            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="State" />
@@ -97,23 +83,20 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userPincode"
-            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Pincode" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/button6"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceed"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="See Your all Orders"
-        android:textAllCaps="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/color_primary"
+        android:text="Process to Check Out" />
 </LinearLayout>

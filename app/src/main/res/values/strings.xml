@@ -8,4 +8,8 @@
     <string name="shop_by_category">Shop By Category</string>
     <string name="see_all">See All</string>
     <string name="shop_by_Product" />
+    <string name="shop_by_product">Shop By Product</string>
+    <string name="total_item_in_cart_is_10">Total item in cart is 10</string>
+    <string name="total_cost_20000">Total cost : 20000</string>
+    <string name="check_out">Check out</string>
 </resources>
