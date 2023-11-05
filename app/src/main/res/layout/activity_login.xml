@@ -11,6 +11,7 @@
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Sign Up"
         app:layout_constraintEnd_toEndOf="@+id/button3"
         app:layout_constraintStart_toStartOf="@+id/button3"
@@ -47,6 +48,8 @@
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_primary"
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

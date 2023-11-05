@@ -22,7 +22,8 @@
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingClass">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/userName"
@@ -104,11 +105,29 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        style="@style/Widget.MaterialComponents.Button"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_primary"
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="See Your all Orders"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+ <Button
+        style="@style/Widget.MaterialComponents.Button"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_primary"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Log out"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

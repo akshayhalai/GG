@@ -52,3 +52,14 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+//
+//Handler().postDelayed({
+//    val i = Intent(this@SplashScreen, MainActivity::class.java)
+//    startActivity(i)
+//    finish()
+//}, SPLASH_TIME_OUT.toLong())
+//}
+//
+//companion object {
+//    private const val SPLASH_TIME_OUT = 3000
+//}

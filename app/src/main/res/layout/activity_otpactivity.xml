@@ -39,6 +39,8 @@
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button"
         android:id="@+id/button3"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_primary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

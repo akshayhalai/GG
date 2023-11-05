@@ -32,6 +32,7 @@ class CategoryAdapter (var context : Context, val list : ArrayList<CategoryModel
         holder.binding.textView2.text = list[position].cate
         Glide.with(context).load(list[position].img).into(holder.binding.imageView)
 
+
         holder.itemView.setOnClickListener{
             val intent = Intent(context, CategoryActivity::class.java)
             intent.putExtra("cate",list[position].cate)

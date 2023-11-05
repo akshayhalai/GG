@@ -23,6 +23,7 @@ import com.example.gg.databinding.FragmentMoreBinding
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
+     var i = 0;
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -54,17 +55,20 @@ class HomeFragment : Fragment() {
         Firebase.firestore.collection("products")
             .get().addOnSuccessListener {
                 list.clear()
+
                 for (doc in it.documents) {
                     val data = doc.toObject(AddProductModel::class.java)
                     list.add(data!!)
                 }
-                binding.productRecycler.adapter = ProductAdapter(requireContext(), list)
+                binding.productRecycler.adapter =
+                    ProductAdapter(requireContext(), list)
             }
+
     }
 
     private fun getCategories() {
         val list = ArrayList<CategoryModel>()
-        Firebase.firestore.collection("category")
+        Firebase.firestore.collection("categories")
             .get().addOnSuccessListener {
                 list.clear()
                 for (doc in it.documents) {

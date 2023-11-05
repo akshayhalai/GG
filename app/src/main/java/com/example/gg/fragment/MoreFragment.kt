@@ -7,8 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.load.model.Model
+import com.example.gg.activity.LoginActivity
 import com.example.gg.activity.Order
 import com.example.gg.databinding.FragmentMoreBinding
 import com.example.gg.model.UserModel
@@ -27,6 +29,11 @@ class MoreFragment : Fragment() {
         binding = FragmentMoreBinding.inflate(layoutInflater)
         binding.button6.setOnClickListener{
             startActivity(Intent(context,Order::class.java))
+
+        }
+        binding.button.setOnClickListener {
+            startActivity(Intent(context,LoginActivity::class.java))
+            Toast.makeText(context, "Successfully Logout..", Toast.LENGTH_SHORT).show()
         }
 
         preferences = requireContext().getSharedPreferences("user", AppCompatActivity.MODE_PRIVATE)

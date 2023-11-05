@@ -24,6 +24,7 @@ class profileActivity : AppCompatActivity() {
 
     }
 
+
     private fun loadUserInfo() {
 
         Firebase.firestore.collection("users")

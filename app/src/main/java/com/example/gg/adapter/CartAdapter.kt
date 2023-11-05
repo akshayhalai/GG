@@ -28,7 +28,7 @@ class CartAdapter(val context: Context,val list: List<ProductModel>) :
        return  list.size
     }
 
-    override fun onBindViewHolder(holder: CartViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CartViewHolder, position:  Int) {
 
         Glide.with(context).load(list[position].productImage).into(holder.binding.imageView3)
 
